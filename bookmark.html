@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Cafe Bookmarks</title>
+    <link rel="stylesheet" href="bookmark.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">logo</div>
+        <div class="nav-search">
+            <span>Restaurants</span>
+            <span>Oceanside, CA 92058</span>
+            <button class="clear-btn">X</button>
+            <button class="search-btn">🔍</button>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Write a Review</a>
+            <a href="#">Reservation</a>
+            <div id="auth-buttons">
+                <a href="signUp.html" class="auth-btn">Sign Up</a>
+                <a href="signUp.html" class="auth-btn">Log In</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Featured Bookmarks -->
+        <section class="featured-bookmarks">
+            <h2>Featured Bookmarks</h2>
+            <div class="bookmark-row">
+                <a href="#" class="bookmark" onclick="openFolder('Popular Spot 1')">
+                    <img src="coffee_food.jpg" alt="Bookmark 1">
+                    <span>Popular Spot 1</span>
+                </a>
+                <a href="#" class="bookmark" onclick="openFolder('Popular Spot 2')">
+                    <img src="crepe.png" alt="Bookmark 2">
+                    <span>Popular Spot 2</span>
+                </a>
+                <a href="#" class="bookmark" onclick="openFolder('Popular Spot 3')">
+                    <img src="study_2.jpg" alt="Bookmark 3">
+                    <span>Popular Spot 3</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Your Bookmarks -->
+        <section class="your-bookmarks">
+            <div class="section-header">
+                <h2>Your Bookmarks</h2>
+                <button class="new-category-btn" onclick="addCategory()">+ New Category</button>
+            </div>
+            <div class="bookmark-row" id="user-bookmarks">
+                <div class="bookmark" onclick="openFolder('Study Spot 1')">
+                    <img src="crepe.png" alt="User Bookmark 1">
+                    <span>Study Spot 1</span>
+                    <button class="delete-btn" onclick="deleteBookmark(event, this)">Delete</button>
+                </div>
+                <div class="bookmark" onclick="openFolder('Study Spot 2')">
+                    <img src="coffee_food.jpg" alt="User Bookmark 2">
+                    <span>Study Spot 2</span>
+                    <button class="delete-btn" onclick="deleteBookmark(event, this)">Delete</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="bookmark.js"></script>
+</body>
+</html>
