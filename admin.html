@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles_admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <div class="auth-section">
+            <button>Logout</button>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <!-- Sidebar navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><button onclick="showPanel('users')">View Users</button></li>
+                <li><button onclick="showPanel('bookmarks')">View Bookmarks</button></li>
+                <li><button onclick="showPanel('reviews')">View Reviews</button></li>
+                <li><button onclick="showPanel('settings')">Settings</button></li>
+                <li><button onclick="showPanel('analytics')">Analytics</button></li>
+                <li><button onclick="showPanel('support')">Support Requests</button></li>
+            </ul>
+        </nav>
+
+        <!-- Main content area -->
+        <main class="main-content">
+            <section id="users" class="panel">
+                <h2>Users</h2>
+                <p>List and manage users here.</p>
+                <!-- Content specific to users panel -->
+            </section>
+
+            <section id="bookmarks" class="panel">
+                <h2>Bookmarks</h2>
+                <p>View and manage bookmarks here.</p>
+                <!-- Content specific to bookmarks panel -->
+            </section>
+
+            <section id="reviews" class="panel">
+                <h2>Reviews</h2>
+                <p>View and manage reviews here.</p>
+                <!-- Content specific to reviews panel -->
+            </section>
+
+            <section id="settings" class="panel">
+                <h2>Settings</h2>
+                <p>Configure admin settings here.</p>
+                <!-- Content specific to settings panel -->
+            </section>
+
+            <section id="analytics" class="panel">
+                <h2>Analytics</h2>
+                <p>View website analytics here.</p>
+                <!-- Content specific to analytics panel -->
+            </section>
+
+            <section id="support" class="panel">
+                <h2>Support Requests</h2>
+                <p>Manage support requests here.</p>
+                <!-- Content specific to support panel -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>
