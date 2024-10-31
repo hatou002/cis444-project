@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form validation and submission
     const reviewForm = document.getElementById('reviewForm');
     const submitBtn = reviewForm.querySelector('.submit-btn');
     const textarea = reviewForm.querySelector('textarea');
@@ -100,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'reviewscreen.html';
     });
 
-    // Prevent accidental navigation when form has content
     window.addEventListener('beforeunload', (e) => {
         if (textarea.value.trim() || currentRating > 0) {
             e.preventDefault();

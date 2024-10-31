@@ -1,83 +1,9 @@
-/* General Reset */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #D9D9D9;
-    color: #333;
-} */
-
-/* Navbar */
-/* .navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #D9D9D9;
-    color: #333;
-}
-
-.logo {
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-.nav-search {
-    display: flex;
-    align-items: center;
-    background-color: #B0B0B0;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.nav-search span {
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-.clear-btn, .search-btn {
-    background-color: #2ECC71;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.nav-links {
-    margin-left: auto;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.nav-links a, .login-btn, .signup-btn {
-    text-decoration: none;
-    color: #333;
-}
-
-.login-btn, .signup-btn {
-    background-color: transparent;
-    border: 1px solid #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.signup-btn {
-    background-color: #2ECC71;
-    color: white;
-    border: none;
-} */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
-/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
