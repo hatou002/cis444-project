@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Cafe Bookmarks</title>
     <link rel="stylesheet" href="bookmark.css">
 </head>
+
 <body>
     <!-- Navbar -->
-    <header class="navbar">
+    <!-- <header class="navbar">
         <div class="logo">logo</div>
         <div class="nav-search">
             <span>Restaurants</span>
@@ -24,6 +26,32 @@
                 <a href="signUp.html" class="auth-btn">Log In</a>
             </div>
         </nav>
+    </header> -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Rest Logo" />
+            <h1>Rest</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Rest Areas..." id="search">
+            <button id="search-btn">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="homepage.html">Home <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="writearev.html">Write a review</a></li>
+                        <li><a href="bookmark.html">bookmark</a></li>
+                        <li><a href="#">settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Log In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -64,11 +92,12 @@
                     <span contenteditable="true" onblur="saveBookmarkName(this)">Study Spot 2</span>
                     <button class="delete-btn" onclick="deleteBookmark(event, this)">Delete</button>
                 </div>
-            </div>                  
+            </div>
             </div>
         </section>
     </main>
 
     <script src="bookmark.js"></script>
 </body>
+
 </html>
