@@ -1,24 +1,25 @@
-// Function to add a new category/bookmark
 function addCategory() {
     const userBookmarks = document.getElementById("user-bookmarks");
 
     const newBookmark = document.createElement("div");
     newBookmark.classList.add("bookmark");
 
-    // Add click event to open folder
-    newBookmark.onclick = function() {
-        openFolder("New Study Spot");
-    };
-
-    // Add placeholder image
+    // Add placeholder image with openFolder function
     const img = document.createElement("img");
     img.src = "https://via.placeholder.com/150";
     img.alt = "New Bookmark";
+    img.onclick = function() {
+        openFolder("New Study Spot");
+    };
     newBookmark.appendChild(img);
 
-    // Add name
+    // Add editable name
     const span = document.createElement("span");
+    span.contentEditable = "true";
     span.textContent = "New Study Spot";
+    span.onblur = function() {
+        saveBookmarkName(span);
+    };
     newBookmark.appendChild(span);
 
     // Add delete button
@@ -31,6 +32,15 @@ function addCategory() {
     newBookmark.appendChild(deleteBtn);
 
     userBookmarks.appendChild(newBookmark);
+}
+
+
+// Function to save the bookmark name with default fallback
+function saveBookmarkName(element) {
+    const newName = element.textContent.trim();
+    if (!newName) {
+        element.textContent = "Unnamed Folder"; // Fallback if left empty
+    }
 }
 
 // Function to delete a bookmark

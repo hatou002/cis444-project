@@ -54,16 +54,17 @@
                 <button class="new-category-btn" onclick="addCategory()">+ New Category</button>
             </div>
             <div class="bookmark-row" id="user-bookmarks">
-                <div class="bookmark" onclick="openFolder('Study Spot 1')">
-                    <img src="crepe.png" alt="User Bookmark 1">
-                    <span>Study Spot 1</span>
+                <div class="bookmark">
+                    <img src="crepe.png" alt="User Bookmark 1" onclick="openFolder('Study Spot 1')">
+                    <span contenteditable="true" onblur="saveBookmarkName(this)">Study Spot 1</span>
                     <button class="delete-btn" onclick="deleteBookmark(event, this)">Delete</button>
                 </div>
-                <div class="bookmark" onclick="openFolder('Study Spot 2')">
-                    <img src="coffee_food.jpg" alt="User Bookmark 2">
-                    <span>Study Spot 2</span>
+                <div class="bookmark">
+                    <img src="coffee_food.jpg" alt="User Bookmark 2" onclick="openFolder('Study Spot 2')">
+                    <span contenteditable="true" onblur="saveBookmarkName(this)">Study Spot 2</span>
                     <button class="delete-btn" onclick="deleteBookmark(event, this)">Delete</button>
                 </div>
+            </div>                  
             </div>
         </section>
     </main>
