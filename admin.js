@@ -8,7 +8,6 @@ function showPanel(panelId) {
     document.getElementById(panelId).classList.add('active');
 }
 
-// Show the default panel on page load (e.g., Users)
 document.addEventListener('DOMContentLoaded', () => {
     showPanel('users');
 });

@@ -3,39 +3,35 @@
 <head>
     <title>Write a Review - Study Cafe Spots</title>
     <link rel="stylesheet" href="writearev.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="browser-controls">
-        <button class="browser-button back-btn">←</button>
-        <button class="browser-button forward-btn">→</button>
-        <button class="browser-button refresh-btn">↺</button>
-    </nav>
-
-    <div class="address-bar">
-        <span class="secure-icon">🔒</span>
-        <span class="url">studycafespots.com/review</span>
-        <button class="star-button">⭐</button>
-    </div>
-
-    <header class="main-header">
-        <a href="reviewscreen.html" class="logo">
-            <img src="/api/placeholder/48/48" alt="Logo">
-        </a>
-
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Rest Logo" />
+            <h1>Rest</h1>
+        </div>
         <div class="search-bar">
-            <div class="dropdown">Restaurants</div>
-            <input type="text" placeholder="Search for cafes...">
+            <input type="text" placeholder="Search Rest Areas..." id="search">
+            <a href="index.html"><button id="search-btn">Search</button></a>
         </div>
-
-        <div class="header-buttons">
-            <button class="btn write-review-btn">Write a Review</button>
-            <button class="btn">Bookmarks</button>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="homepage.html">Home <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="writearev.html">Write a review</a></li>
+                        <li><a href="bookmark.html">bookmark</a></li>
+                        <li><a href="settings.html">settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Log In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
         </div>
-
-        <a href="#" class="profile">
-            <img src="/api/placeholder/48/48" alt="Profile" class="profile-icon">
-        </a>
     </header>
 
     <div class="review-container" role="main">

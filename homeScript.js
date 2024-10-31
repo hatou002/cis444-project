@@ -1,3 +1,21 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the search button and search input
+    const searchBtn = document.getElementById('search-btn');
+    const searchInput = document.getElementById('search');
+
+    // Add click event listener to search button
+    searchBtn.addEventListener('click', function() {
+        window.location.href = 'search.html';
+    });
+
+    // Add enter key event listener to search input
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            window.location.href = 'search.html';
+        }
+    });
+});
+
 //For dynamic image sizes
 window.addEventListener('resize', () => {
     const slideshow = document.querySelector('.slideshow');

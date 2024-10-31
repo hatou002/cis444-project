@@ -21,11 +21,6 @@ function toggleAuthForms() {
     }
 }
 
-// Redirect to bookmark.html when "Back" button is clicked
-document.getElementById('back-btn').addEventListener('click', function() {
-    window.location.href = 'bookmark.html';
-});
-
 // Sign-Up Form Submission
 document.getElementById('signUpForm').addEventListener('submit', function(event) {
     event.preventDefault();
