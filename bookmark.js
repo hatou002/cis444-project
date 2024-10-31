@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set up Sign Up and Log In buttons to link to signUp.html
         authButtons.innerHTML = `
             <button onclick="window.location.href='signUp.html'" class="auth-btn">Sign Up</button>
-            <button onclick="window.location.href='signUp.html'" class="auth-btn">Log In</button>
+            <button onclick="window.location.href='login.html'" class="auth-btn">Log In</button>
         `;
     }
 });
