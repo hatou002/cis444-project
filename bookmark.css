@@ -90,7 +90,9 @@ body {
 
 .bookmark-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    align-items: flex-start;
 }
 
 .bookmark {
@@ -99,6 +101,8 @@ body {
     align-items: center;
     text-decoration: none;
     color: #333;
+    width: 150px;
+    box-sizing: border-box;
 }
 
 .bookmark img {
