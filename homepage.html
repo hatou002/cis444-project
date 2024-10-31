@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles_home.css">
+    <script src="homeScript.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Header section -->
+    <!-- <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="menu-buttons">
+            <button>Bookmarks</button>
+            <button>Reviews</button>
+            <button>Settings</button>
+        </div>
+        <div class="auth-section">
+            <img src="profile-placeholder.png" alt=" ">
+            <button>Login / Signup</button>
+        </div>
+    </header> -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Rest Logo" />
+            <h1>Rest</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Rest Areas..." id="search">
+            <button id="search-btn">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="homepage.html">Home <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="writearev.html">Write a review</a></li>
+                        <li><a href="bookmark.html">bookmark</a></li>
+                        <li><a href="#">settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Log In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Slideshow section -->
+    <div class="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slide_1.jpg" alt="slide_1">
+            </div>
+            <div class="slide">
+                <img src="images/slide_2.jpg" alt="slide_2">
+            </div>
+            <div class="slide">
+                <img src="images/slide_3.jpg" alt="slide_3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity section -->
+    <h2 class="recent-activity-header">Recent Activity</h2>
+    <div class="recent-activity"></div>
+
+</body>
+
+</html>

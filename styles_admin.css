@@ -1,0 +1,87 @@
+/* Admin page structure */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar ul li button:hover {
+    background-color: #555;
+}
+
+/* Main content area */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.panel {
+    display: none; /* Hide panels initially */
+}
+
+/* Show active panel */
+.panel.active {
+    display: block;
+}
+
+.panel h2 {
+    color: #333;
+}
+
+.auth-section button {
+    background-color: #da5227;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.auth-section button:hover {
+    background-color: #b34420;
+}

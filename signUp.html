@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Log In</title>
+    <link rel="stylesheet" href="signUp.css">
+    <script src="signUp.js" defer></script>
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Back Button -->
+        <button id="back-btn" class="back-btn">Back to Bookmarks</button>
+
+        <h2 id="form-title">Create an Account</h2>
+        
+        <!-- User Type Selection -->
+        <label for="userType">Sign Up As:</label>
+        <select id="userType" name="userType">
+            <option value="regular">Regular User</option>
+            <option value="business">Business</option>
+        </select>
+
+        <!-- Sign-Up Form -->
+        <form id="signUpForm" class="auth-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Log-In Form -->
+        <form id="logInForm" class="auth-form" style="display: none;">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <!-- Toggle Link -->
+        <p id="toggle-link">
+            Already have an account? <span id="toggle-text" onclick="toggleAuthForms()">Log In</span>
+        </p>
+    </div>
+</body>
+</html>
